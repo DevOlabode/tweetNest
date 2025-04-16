@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edit Tweet</title>
+    </head>
+    <body>
+        <h2>Editing Tweet</h2>
+    
+        <form method="post" action="/tweets/<%= fTweet.id %>?_method=PATCH">
+            <label for="tweetEdit">Edit tweet: </label>
+            <textarea name="tweetEdit" id="tweetEdit" cols="30" rows="10">
+                <%= fTweet.tweet %>
+            </textarea>
+    <br>
+
+            <label for="editHashtags">Edit hashtags: </label>
+    
+            <textarea name="editHashtags" id="editHashtags" cols="17" rows="4">
+                <%= fTweet.hashtags %>
+            </textarea>
+<br>
+            <button>Submit</button>
+        </form>
+        <a href="/tweets">Back to Index</a>
+    </body>
+    </html>
+</body>
+</html>

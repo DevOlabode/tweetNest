@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Display</title>
+</head>
+<body>
+    <h1>Tweet ID: <%= fTweet.id %></h1>
+
+    <section>
+        <h2>
+            <div>Username : <%= fTweet.username %></div>
+            <div>Tweet Display : <%= fTweet.tweet %></div>
+            <div>Hashtags : <%= fTweet.hashtags %></div>
+        </h2>
+
+        <a href="/tweets">Back to Index</a>
+        <a href="/tweets/<%= fTweet.id %>/edit">Edit Comment</a>
+    </section>
+
+    
+    <form method="post" action="/tweets/<%= fTweet.id %>?_method=Delete">
+        <button>Delete this button</button>
+    </form>
+</body>
+</html>

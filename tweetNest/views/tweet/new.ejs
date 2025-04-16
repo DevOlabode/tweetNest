@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tweet</title>
+</head>
+<body>
+    <h2>New Tweet</h2>
+
+    <form action="/tweets" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"> 
+
+        <br>
+
+        <label for="tweet">Tweet:</label> <br>
+        <textarea name="tweet" id="tweet" cols="25" rows="5"></textarea>
+
+        <br>
+
+        <label for="hashtags">Hashtags:</label> 
+        <input type="text" name="hashtags" id="hashtags" placeholder="eg #funny #demure">
+
+        <br>
+        <button>Submit</button>
+    </form>
+
+    <br>
+    
+    <a href="/tweets">Back to Index.</a>
+</body>
+</html>

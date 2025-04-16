@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Display.</title>
+</head>
+<body>
+    <h2> Tweets </h2>
+
+    <% for(let t of tweets){ %>
+        <section>
+            <ul>
+                <li> <%= t.tweet %> - <b> <%= t.username %> </b> </li>
+                <a href="" style="text-decoration: none;" target="_blank"><li style="color: #0096c7;"><%= t.hashtags %></li></a>
+            </ul>
+            <a href="/tweets/<%= t.id %>">Tweet Details</a>
+            <!-- <br> -->
+        </section>
+        <br>
+        <% } %>
+
+        <a href="/tweets/new">Make a new comment</a>
+</body>
+</html>
