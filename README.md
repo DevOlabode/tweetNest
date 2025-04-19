@@ -52,6 +52,9 @@
 git clone https://github.com/DevOlabode/tweetnest.git
 cd tweetnest
 ```
+```bash
+cd tweetnest
+```
 
 ### 2. Install Dependencies
 
