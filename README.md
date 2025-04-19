@@ -50,7 +50,6 @@
 
 ```bash
 git clone https://github.com/DevOlabode/tweetnest.git
-cd tweetnest
 ```
 ```bash
 cd tweetnest
