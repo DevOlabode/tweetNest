@@ -1,6 +1,3 @@
-//Username
-//Tweet
-//hashtags
 
 // GET /tweets- list all tweets
 // POST /tweets- create new tweets
